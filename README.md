@@ -68,7 +68,7 @@ validate({
     "**/*.html",
     "!node_modules/**/*.*"
   ]
-}).then({ resultText, footer, hasMatches } => {
+}).then(({ resultText, footer, hasMatches }) => {
   console.log(resultText);
   console.log(footer);
   if (hasMatches) {
