@@ -58,5 +58,25 @@ const lintText = fileResultToString(lintResult, selectors);
 console.log(lintText);
 ```
 
+You can also use a shorthand to lint a bunch of files:
+
+```
+import {validate} from 'html-structure-linter';
+validate({
+  selectors: { "span div": "Div in Span not allowed" },
+  files: [
+    "**/*.html",
+    "!node_modules/**/*.*"
+  ]
+}).then({resultText: string, footer: string, hasMatches: boolean} => {
+  console.log(resultText);
+  console.log(footer);
+  if (hasMatches) {
+     process.exit(1);
+  }
+});
+```
+
+
 ## License
 [MIT License](./LICENSE)
