@@ -7,17 +7,16 @@ Searches through a given list of html files for css selectors
 One use case is to search for specific selectors inside one or multiple files
 
 ```
-html-structure-linter "div > span" test/fixtures/demo.html
-html-structure-linter "div > span" "test/**/*.html"
+html-structure-linter "span > div" test/fixtures/demo.html
+html-structure-linter "span > div" "test/**/*.html"
 ```
 
 Result:
 
 ```
 test/fixtures/demo.html contains 2 matches:
-  Selector "div"
+  Selector "span > div"
     8:12
-    12:10
 ```
 
 # Lint

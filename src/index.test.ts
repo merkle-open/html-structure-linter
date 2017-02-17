@@ -4,7 +4,7 @@ import * as path from 'path';
 import * as fs from 'fs-promise';
 
 const fixturesPath = path.resolve(__dirname, '../test/fixtures');
-const demoContent = fs.readFileSync(path.join(fixturesPath, 'demo.html'), 'utf8');
+const demoContent = fs.readFileSync(path.join(fixturesPath, 'demo.html'), 'utf8').replace(/\r/g,'');
 
 it('demo file returns no matches', () => {
   expect(getMatchingSelectors(demoContent, [])).toEqual([]);
