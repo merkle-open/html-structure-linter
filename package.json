@@ -7,7 +7,7 @@
     "url" : "https://github.com/namics/html-structure-linter/"
   },
   "bin": {
-    "html-structure-linter": "lib/src/bin.js"
+    "html-structure-linter": "lib/bin.js"
   },
   "files": [
     "lib",
