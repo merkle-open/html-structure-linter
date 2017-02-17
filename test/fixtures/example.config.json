@@ -1,0 +1,6 @@
+{
+  "files": "test/**/*.html",
+  "selectors": {
+    "span div": "DIV in SPAN is not allowed in xhtml strict mode - see https://www.w3.org/2010/04/xhtml10-strict.html"
+  }
+}

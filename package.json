@@ -1,0 +1,56 @@
+{
+  "name": "html-structure-linter",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/npm/npm.git"
+  },
+  "bin": {
+    "html-structure-linter": "lib/src/bin.js"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index",
+  "scripts": {
+    "prepare": "npm-run-all prepare:*",
+    "prepare:test": "npm run test",
+    "prepare:build": "npm run compile",
+    "compile": "tsc",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(\\.(test|spec))\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "devDependencies": {
+    "codelyzer": "^2.0.0",
+    "jest": "^18.1.0",
+    "npm-run-all": "^4.0.1",
+    "ts-jest": "^18.0.3",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6",
+    "@types/cheerio": "^0.17.31",
+    "@types/fs-promise": "^1.0.1",
+    "@types/jest": "^18.1.1",
+    "@types/minimatch": "^2.0.29",
+    "@types/minimist": "^1.2.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "fs-promise": "^2.0.0",
+    "glob-all": "^3.1.0",
+    "minimist": "^1.2.0",
+    "vfile-location": "^2.0.1"
+  }
+}
