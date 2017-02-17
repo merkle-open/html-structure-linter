@@ -55,6 +55,7 @@ const selectors = {
 };
 const lintResult = getMatchingSelectors(exampleInput, selectors);
 const lintText = fileResultToString(lintResult, selectors);
+console.log(lintText);
 ```
 
 ## License
