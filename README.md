@@ -46,7 +46,7 @@ test/fixtures/demo.html contains 1 match:
 
 You can also use the library directly from node
 
-```
+```js
 import {getMatchingSelectors, fileResultToString} from 'html-structure-linter';
 
 const exampleInput = '<div><span></span></div>';
@@ -60,7 +60,7 @@ console.log(lintText);
 
 You can also use a shorthand to lint a bunch of files:
 
-```
+```js
 import {validate} from 'html-structure-linter';
 validate({
   selectors: { "span div": "Div in Span not allowed" },
