@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository" : { 
     "type" : "git",
-    "url" : "https://github.com/npm/npm.git"
+    "url" : "https://github.com/namics/html-structure-linter/"
   },
   "bin": {
     "html-structure-linter": "lib/src/bin.js"
