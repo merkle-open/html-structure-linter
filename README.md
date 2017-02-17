@@ -30,8 +30,6 @@ See the [example config](./test/fixtures/example.config.json) for details
 html-structure-linter -c test/fixtures/example.config.json 
 ```
 
-```
-
 Result:
 
 ```
