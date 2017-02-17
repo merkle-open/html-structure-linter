@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import minimist = require('minimist');
 import { validate, ValidationOptions } from './index';
 import { readFileSync } from 'fs';

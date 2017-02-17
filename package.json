@@ -1,13 +1,13 @@
 {
   "name": "html-structure-linter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "repository" : { 
     "type" : "git",
     "url" : "https://github.com/namics/html-structure-linter/"
   },
   "bin": {
-    "html-structure-linter": "lib/bin.js"
+    "html-structure-linter": "./lib/bin.js"
   },
   "files": [
     "lib",
