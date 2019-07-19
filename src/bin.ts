@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import minimist = require('minimist');
-import { validate, ValidationOptions } from './index';
+import { validate } from './index';
 import { readFileSync } from 'fs';
 
 const pkg = require('../package.json');
