@@ -1,7 +1,7 @@
-import glob = require('glob-all');
-import { readFile } from 'fs-promise';
+import * as glob from 'glob-all';
+import { readFile } from 'fs-extra';
 import * as cheerio from 'cheerio';
-import vfileLocation = require('vfile-location');
+import * as vfileLocation from 'vfile-location';
 
 export interface SelectorOptionObject {
   // Selectors with description

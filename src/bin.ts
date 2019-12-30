@@ -2,7 +2,7 @@
 
 import minimist = require('minimist');
 import { validate } from './index';
-import { readFileSync } from 'fs';
+import { readFileSync } from 'fs-extra';
 
 const pkg = require('../package.json');
 const binName = Object.keys(pkg.bin)[0];

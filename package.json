@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "typings": "lib/index",
   "scripts": {
-    "clean": "npx rimraf package-lock.json node_modules",
+    "clean": "npx --ignore-existing --quiet rimraf package-lock.json node_modules",
     "prepare": "npm-run-all prepare:*",
     "prepare:test": "npm run test",
     "prepare:build": "npm run compile",
@@ -26,7 +26,7 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      ".(ts|tsx)": "ts-jest"
     },
     "testRegex": "(\\.(test|spec))\\.ts$",
     "moduleFileExtensions": [
@@ -35,25 +35,25 @@
       "js"
     ]
   },
-  "devDependencies": {
-    "@types/cheerio": "0.22.13",
-    "@types/fs-promise": "1.0.3",
-    "@types/jest": "24.0.19",
-    "@types/minimatch": "3.0.3",
-    "@types/minimist": "1.2.0",
-    "codelyzer": "5.1.2",
-    "jest": "24.9.0",
-    "npm-check-updates": "3.1.24",
-    "npm-run-all": "4.1.5",
-    "ts-jest": "24.1.0",
-    "tslint": "5.20.0",
-    "typescript": "3.6.4"
-  },
   "dependencies": {
     "cheerio": "0.22.0",
-    "fs-promise": "2.0.3",
+    "fs-extra": "8.1.0",
     "glob-all": "3.1.0",
     "minimist": "1.2.0",
-    "vfile-location": "2.0.5"
+    "vfile-location": "2.0.6"
+  },
+  "devDependencies": {
+    "@types/cheerio": "0.22.15",
+    "@types/fs-extra": "8.0.1",
+    "@types/jest": "24.0.25",
+    "@types/minimatch": "3.0.3",
+    "@types/minimist": "1.2.0",
+    "codelyzer": "5.2.1",
+    "jest": "24.9.0",
+    "npm-check-updates": "4.0.1",
+    "npm-run-all": "4.1.5",
+    "ts-jest": "24.2.0",
+    "tslint": "5.20.1",
+    "typescript": "3.7.4"
   }
 }

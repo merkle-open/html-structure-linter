@@ -1,7 +1,7 @@
 /// <reference types="jest" />
 import { getMatchingSelectors } from './index';
 import * as path from 'path';
-import * as fs from 'fs-promise';
+import * as fs from 'fs-extra';
 
 const fixturesPath = path.resolve(__dirname, '../test/fixtures');
 const demoContent = fs.readFileSync(path.join(fixturesPath, 'demo.html'), 'utf8').replace(/\r/g,'');
