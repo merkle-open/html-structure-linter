@@ -7,23 +7,23 @@ export interface SelectorOptionObject {
   // Selectors with description
   // e.g. { 'b': 'B tags are not allowed' }
   [key: string]: string
-};
+}
 
 export interface FilePosition {
   column: number,
   line: number,
   offset: number,
-};
+}
 
 export interface ValidationOptions {
   selectors: string[] | SelectorOptionObject,
   files: string[]|string
-};
+}
 
 export interface ResultSet {
   selector: string,
   position: FilePosition[]
-};
+}
 
 export async function validate(options: ValidationOptions): Promise<{resultText: string, footer: string, hasMatches: boolean}> {
   const files = await findFiles(options.files);
