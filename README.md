@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/html-structure-linter.svg)](https://badge.fury.io/js/html-structure-linter)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
-[![Build Status](https://github.com/namics/html-structure-linter/workflows/ci/badge.svg?branch=master)](https://github.com/namics/html-structure-linter/actions)
+[![Build Status](https://github.com/merkle-open/html-structure-linter/workflows/ci/badge.svg?branch=master)](https://github.com/merkle-open/html-structure-linter/actions)
 
 Searches through a given list of html files for css selectors
 
